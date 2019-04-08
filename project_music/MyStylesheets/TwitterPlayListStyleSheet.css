@@ -1,0 +1,135 @@
+﻿img {
+    height: 106px;
+    width: 106px;
+}
+
+#submit {
+    width: 100%;
+    height: 43px;
+}
+
+#twitter {
+    width: 90px;
+    height: 40px;
+}
+
+input {
+    display: block;
+    min-width: 100%;
+    height: 50%;
+    padding: 10px;
+    border: solid 1px #BDC7D8;
+    width: 300px;
+    margin-left: 22px;
+}
+
+#formUpload {
+    float: right;
+    position: absolute;
+    top: 900px;
+    left: 300px;
+}
+
+blockquote.twitter-tweet {
+    display: inline-block;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    margin: 10px 5px;
+    padding: 0 16px 16px 16px;
+    max-width: 468px;
+}
+
+    blockquote.twitter-tweet p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+
+    blockquote.twitter-tweet a {
+        color: inherit;
+        font-weight: normal;
+        text-decoration: none;
+        outline: 0 none;
+    }
+
+        blockquote.twitter-tweet a:hover,
+        blockquote.twitter-tweet a:focus {
+            text-decoration: underline;
+        }
+
+img#i {
+    width: 100px;
+    position: relative;
+    float: left;
+}
+
+.navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+}
+
+html, body, h1, h2, h3, h4, h5 {
+    font-family: "Open Sans", sans-serif
+}
+
+#logo {
+    width: 24px;
+    height: inherit;
+}
+
+#container2 {
+    position: relative;
+    top: -16px;
+}
+
+#mainstory {
+    width: 100%;
+}
+
+.loader {
+    border: 16px solid papayawhip;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: relative;
+    left: 45%;
+    top: 150px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loader {
+    position: relative;
+    top: 160px;
+    left: 46%;
+}

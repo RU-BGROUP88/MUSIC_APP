@@ -1,0 +1,24 @@
+
+CREATE TABLE[Users] (
+	[UserId]
+smallint IDENTITY(1, 1) NOT NULL,
+
+[Name] nvarchar(30) NOT NULL,
+
+[FamilyName] nvarchar(30) NOT NULL,
+
+[Gender] nvarchar(30) NOT NULL,
+
+[Age] smallint NOT NULL ,
+	    [Address]
+nvarchar(30)NOT NULL ,
+	 [Email] nvarchar(30) NOT NULL,
+	 	 [MusicType] nvarchar(30) NOT NULL,
+		 	 	 [Password] nvarchar(30) NOT NULL,
+
+
+         [Image] nvarchar(100) NOT NULL,
+  Primary key([UserId])
+)
+
+SELECT* FROM  Users;

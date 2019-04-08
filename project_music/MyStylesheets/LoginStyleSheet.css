@@ -1,0 +1,185 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    WIDTH: 50%;
+    DISPLAY: contents
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#loader2 {
+    position: absolute;
+    top: 240px;
+    left: 35%;
+    z-index: 1;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 30%;
+}
+
+.container {
+    padding: 16px;
+    WIDTH: 50%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#logo {
+    width: 24px;
+    height: inherit;
+}
+
+.login-html {
+    width: 100%;
+    height: 970px;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+    /* top: 100px; */
+    background: rgba(40,57,101,.9);
+}
+
+div#ph {
+    /* right: 250px; */
+    width: 120px;
+    height: 130px;
+    position: relative;
+    /* float: unset; */
+    left: 300px;
+    top: -220px;
+}
+
+button#buttonUpload {
+    width: 150px;
+    float: right;
+    left: 60px;
+    top: -50px;
+    position: relative;
+    margin-right: 295px;
+    margin-top: 50px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    border-bottom-color: rgb(106, 111, 140);
+    background-color: #e7e7e7;
+    color: black;
+}
+
+img {
+    vertical-align: middle;
+    width: inherit;
+    height: inherit;
+}
+
+#1 {
+    position: relative;
+    float: left;
+}
+
+.loader {
+    border: 16px solid papayawhip;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 35%;
+    top: 100px;
+    z-index: 1;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loader {
+    position: absolute;
+    top: 240px;
+    left: 20%;
+    z-index: 1;
+}
+
+#loaderSignUp {
+    position: absolute;
+    top: 240px;
+    left: 28%;
+    z-index: 1;
+}

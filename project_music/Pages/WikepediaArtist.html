@@ -1,0 +1,135 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>music app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <link href="../Content/style.css" rel="stylesheet" />
+    <link href="../MyStylesheets/WikipediaArtistStyleSheet.css" rel="stylesheet" />
+    <script src="../MyJavaScripts/WikipediaArtistJavaScript.js"></script>
+
+</head>
+<body class="w3-theme-l5">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="LoginForm.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><img id="logo" src="../images/Beats_Music_logo.svg.png" /> music app</a>
+            <a href="EditPage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Edit"><i>Edit</i></a>
+            <a href="TwitterPage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i>Twitter</i></a>
+            <a href="YoutubePage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i>Youtube</i></a>
+            <a href="TwitterPlaylist.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i>Twitter Playlist</i></a>
+            <a href="YoutubePlaylist.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i>Youtube Playlist</i></a>
+            <a href="WikepediaArtist.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i>Wikepedia Artist</i></a>
+        
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="LoginForm.html" class="w3-bar-item w3-button w3-padding-large">Login Page</a>
+        <a href="EditPage.html" class="w3-bar-item w3-button w3-padding-large">Edit</a>
+        <a href="TwitterPage.html" class="w3-bar-item w3-button w3-padding-large">Twitter</a>
+        <a href="YoutubePage.html" class="w3-bar-item w3-button w3-padding-large">Youtube</a>
+        <a href="TwitterPlaylist.html" class="w3-bar-item w3-button w3-padding-large">Twitter Playlist</a>
+        <a href="YoutubePlaylist.html" class="w3-bar-item w3-button w3-padding-large">Youtube Playlist</a>
+        <a href="WikepediaArtist.html" class="w3-bar-item w3-button w3-padding-large">Wikepedia Artist</a>
+
+    </div>
+
+    <!-- Page Container -->
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+        <!-- The Grid -->
+        <div class="w3-row">
+            <!-- Left Column -->
+            <div class="w3-col m3">
+                <!-- Profile -->
+                <div id="profile" class="w3-card w3-round w3-white">
+                </div>
+                <br>
+
+                <!-- Accordion -->
+                <div class="w3-card w3-round">
+                    <div class="w3-white">
+                        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Top Artists of my Music Type</button>
+                        <div id="Demo1" class="w3-hide w3-container">
+                        </div>
+                        <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Top Songs of my Music Type</button>
+                        <div id="Demo2" class="w3-hide w3-container">
+                        </div>
+                        <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Top Albums of my Music Type</button>
+                        <div id="Demo3" class="w3-hide w3-container">
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Interests -->
+                <div class="w3-card w3-round w3-white w3-hide-small">
+                    <div id="Interests" class="w3-container">
+                        <p>Interests</p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Middle Column -->
+            <div id="container2" class="w3-col m7">
+
+
+
+                <div class="w3-container w3-card w3-white w3-round w3-margin">
+                    <header id="header">
+                        <form id="WikepediaAristForm" action="/action_page.php">
+                            <div class="main">                       
+                                <section>  <input type="text" id="search" placeholder="Search Artist Name " />  </section>                           
+                                <section> <input id="submit" type="submit" value="Submit" /></section>
+                            </div>
+                        </form>
+
+                    </header>
+                    <div id="container">
+                        <button id="Savebutton"></button>
+                    </div>
+                </div>
+
+
+                <!-- End Middle Column -->
+            </div>
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-d3 w3-padding-16">
+        <h5></h5>
+    </footer>
+
+</body>
+</html>

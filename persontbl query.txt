@@ -1,0 +1,21 @@
+
+CREATE TABLE[PersonTbl] (
+	[PersonId]
+smallint IDENTITY(1, 1) NOT NULL,
+
+[Name] nvarchar(30) NOT NULL,
+
+[FamilyName] nvarchar(30) NOT NULL,
+
+[Gender] nvarchar(30) NOT NULL,
+
+[Age] smallint NOT NULL ,
+	    [Height]
+smallint NOT NULL ,
+	 [Address] nvarchar(30) NOT NULL,
+
+         [Image] nvarchar(100) NOT NULL,
+  Primary key([PersonId])
+)
+
+SELECT* FROM  PersonTbl;

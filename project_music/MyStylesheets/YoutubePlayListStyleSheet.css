@@ -1,0 +1,154 @@
+﻿#submit {
+    width: 100%;
+    height: 43px;
+}
+
+input {
+    display: block;
+    min-width: 100%;
+    height: 50%;
+    padding: 10px;
+    border: solid 1px #BDC7D8;
+    width: 300px;
+    margin-left: 22px;
+}
+
+.vertical-menu {
+    width: 40%;
+    height: 400px;
+    overflow-y: auto;
+    /* float: right; */
+    /* top: -100px; */
+    position: relative;
+    /* top: -100px; */
+    top: 50px;
+    float: left;
+    /* float: right; */
+    display: list-item;
+}
+
+    .vertical-menu a {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+    }
+
+        .vertical-menu a:hover {
+            background-color: #ccc;
+        }
+
+        .vertical-menu a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+h1 {
+    width: 50px;
+    display: inline;
+    font-size: 25px;
+}
+
+#sidebar {
+    min-height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: relative;
+    display: inline-table;
+    text-align: -webkit-center;
+}
+
+p {
+    margin: 0 0 10px;
+    font-size: initial;
+}
+
+#main-article {
+    float: left;
+    width: 60%;
+    min-height: 450px;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+#i {
+    width: 100px;
+    position: relative;
+    float: left;
+}
+
+.navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+}
+
+img {
+    height: 106px;
+    width: 106px;
+}
+
+#youtube {
+    width: 50px;
+    height: 50px;
+}
+
+#logo {
+    width: 24px;
+    height: inherit;
+}
+
+#container2 {
+    position: relative;
+    top: -16px;
+}
+
+#container {
+    width: 100%;
+}
+
+.loader {
+    border: 16px solid papayawhip;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: relative;
+    left: 45%;
+    top: 150px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loader {
+    position: relative;
+    top: 160px;
+    left: 46%;
+}
+
+#mainstory {
+    width: 100%;
+}

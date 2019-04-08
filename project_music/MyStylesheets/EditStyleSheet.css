@@ -1,0 +1,171 @@
+﻿img {
+    height: 106px;
+    width: 106px;
+}
+
+#submit {
+    width: 100%;
+    height: 43px;
+}
+
+#twitter {
+    width: 90px;
+    height: 40px;
+}
+
+input {
+    display: block;
+    min-width: 100%;
+    height: 50%;
+    padding: 10px;
+    border: solid 1px #BDC7D8;
+    width: 300px;
+    margin-left: 22px;
+}
+
+#formUpload {
+    float: right;
+    position: absolute;
+    top: 900px;
+    left: 300px;
+}
+
+blockquote.twitter-tweet {
+    display: inline-block;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    margin: 10px 5px;
+    padding: 0 16px 16px 16px;
+    max-width: 468px;
+}
+
+    blockquote.twitter-tweet p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+
+    blockquote.twitter-tweet a {
+        color: inherit;
+        font-weight: normal;
+        text-decoration: none;
+        outline: 0 none;
+    }
+
+        blockquote.twitter-tweet a:hover,
+        blockquote.twitter-tweet a:focus {
+            text-decoration: underline;
+        }
+
+img#i {
+    width: 100px;
+    position: relative;
+    float: left;
+}
+
+.navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+}
+
+html, body, h1, h2, h3, h4, h5 {
+    font-family: "Open Sans", sans-serif
+}
+
+#logo {
+    width: 24px;
+    height: inherit;
+}
+
+button#buttonUpload {
+    position: relative;
+    left: -65px;
+}
+
+input#files {
+    border: black;
+    height: 40px;
+    /* float: right; */
+    position: relative;
+    left: -45px;
+}
+
+select#Gender {
+    position: relative;
+    right: -22.5px;
+}
+
+select#MusicType {
+    position: relative;
+    right: -22.5px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    position: relative;
+    left: 20px;
+}
+
+#submit {
+    position: relative;
+    left: 13px;
+}
+
+button#buttonUpload {
+    position: absolute;
+    left: 240px;
+    top: 38px;
+    width: 120px;
+}
+
+input#files {
+    border: black;
+    height: 40px;
+    /* float: right; */
+    position: relative;
+    left: -10px;
+}
+
+#formUpload {
+    position: relative;
+    top: 0px;
+    left: 5px;
+    float: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    top: 10px;
+    position: relative;
+    left: -10px;
+}
+
+div#ph {
+    position: absolute;
+    top: -5px;
+    left: 400px;
+    /*background-color: blue;*/
+    width: 100px;
+    height: 100px;
+}
+
+#LoadImage {
+    width: inherit;
+    height: inherit;
+}
+
+#container2 {
+    position: relative;
+    top: -16px;
+}
